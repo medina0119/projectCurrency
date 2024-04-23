@@ -1,0 +1,16 @@
+server:
+  port:
+    8081
+
+spring:
+  application: name=currency
+  datasource:
+    url: jdbc:postgresql://localhost/currencydb
+    username: postgres
+    password: 123
+  jpa:
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+cxf:
+  path: /Service
